@@ -1,0 +1,60 @@
+/* Adobe Illustrator specific styles */
+.illustrator-page #bg:before {
+    background-image: linear-gradient(to top, 
+        rgba(255, 99, 71, 0.9), /* Tomato color for Illustrator */
+        rgba(255, 69, 0, 0.7) 50%, 
+        rgba(255, 140, 0, 0.5)
+    ), url("../../images/overlay.png");
+    background-size: cover, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    z-index: 2;
+}
+
+.illustrator-content {
+    /* Add any overall styles for the Illustrator content here */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.illustrator-title {
+    font-size: 2.5rem;
+    color: #FF9A00; /* Adobe Illustrator color */
+}
+
+.illustrator-project-title {
+    font-size: 2rem;
+    color: #FF9A00;
+    margin-top: 2rem;
+}
+
+.illustrator-project-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.illustrator-orange-underline {
+    font-size: 1.5rem;
+    color: #FF9A00;
+    text-decoration: underline;
+}
+
+.illustrator-button-container {
+    margin-top: 2rem;
+}
+
+.illustrator-button {
+    background-color: #FF9A00;
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.illustrator-button:hover {
+    background-color: #FFB84D;
+}
+
+.illustrator-page #header {
+    margin-bottom: 2rem; /* Match the Figma page spacing */
+}

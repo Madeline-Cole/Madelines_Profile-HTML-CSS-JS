@@ -1,0 +1,119 @@
+/* Figma page specific styles */
+.figma-page #bg:before {
+    background-image: linear-gradient(to top, 
+        rgba(116, 8, 194, 0.9), 
+        rgba(176, 100, 214, 0.7) 50%, 
+        rgba(208, 151, 239, 0.5)
+    ), url("../../images/overlay.png");
+    background-size: cover, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    z-index: 2;
+}
+
+.figma-page #bg:after {
+    background-image: url("../../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.figma-page #bg {
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* Ensure the content is above the background */
+.figma-page #main {
+    position: relative;
+    z-index: 2;
+}
+
+.figma-title {
+    font-size: 2.5rem;
+    color: #9747FF; /* Figma purple color */
+    margin-top: 0;
+}
+
+.figma-project-title {
+    font-size: 2rem;
+    color: #9747FF;
+    margin-top: 2rem;
+}
+
+.figma-page #header {
+    margin-bottom: 1rem;
+}
+
+.figma-page .page-title {
+    margin-top: 1rem;
+}
+
+.figma-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.figma-project-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Iframe styling */
+.figma-page iframe {
+    display: block;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+}
+
+/* Container for iframe to ensure responsiveness */
+.figma-page .iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 1375px;
+    margin: 0 auto 2rem auto;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.figma-page .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.figma-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.figma-button {
+    background-color: #9747FF;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.figma-button:hover {
+    background-color: #B388FF;
+}

@@ -1,0 +1,61 @@
+/* Wordpress specific styles */
+.wordpress-page #bg:before {
+    background-image: linear-gradient(to top, 
+        rgba(71, 123, 255, 0.9), /* Tomato color for Illustrator */
+        rgba(0, 34, 255, 0.7) 50%, 
+        rgba(13, 0, 255, 0.5)
+    ), url("../../images/overlay.png");
+    background-size: cover, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    z-index: 2;
+}
+
+.wordpress-content {
+    /* Add any overall styles for the Illustrator content here */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.wordpress-title {
+    font-size: 2.5rem;
+    color: #0d437d;
+}
+
+.wordpress-project-title {
+    font-size: 2rem;
+    color: #0d437d;
+    margin-top: 2rem;
+}
+
+.wordpress-project-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.wordpress-blue-underline {
+    font-size: 1.5rem;
+    color: #0d437d;
+    text-decoration: underline;
+}
+
+.wordpress-button-container {
+    margin-top: 2rem;
+}
+
+.wordpress-button {
+    background-color: #1a5ea8;
+    color: #000000;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.wordpress-button:hover {
+    background-color: #1a5ea8;
+}
+
+
+.wordpress-content {
+    padding-top: 1rem; /* Add a small top padding to content */
+}

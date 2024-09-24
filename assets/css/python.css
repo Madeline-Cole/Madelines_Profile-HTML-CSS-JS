@@ -1,0 +1,57 @@
+/* Python specific styles */
+.python-page #bg:before {
+    background-image: linear-gradient(to top, 
+        rgba(255, 223, 0, 0.9), /* Yellow color for Python */
+        rgba(55, 118, 171, 0.7) 50%, 
+        rgba(0, 84, 147, 0.5)
+    ), url("../../images/overlay.png");
+    background-size: cover, 256px 256px;
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    z-index: 2;
+}
+
+.python-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.python-title {
+    font-size: 2.5rem;
+    color: #ffd43b; /* Python yellow */
+}
+
+.python-project-title {
+    font-size: 2rem;
+    color: #ffd43b;
+    margin-top: 2rem;
+}
+
+.python-project-description {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.python-yellow-underline {
+    font-size: 1.5rem;
+    color: #ffd43b;
+    text-decoration: underline;
+}
+
+.python-button-container {
+    margin-top: 2rem;
+}
+
+.python-button {
+    background-color: #3776ab; /* Python blue */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.python-button:hover {
+    background-color: #ffd43b; /* Python yellow */
+    color: #000000;
+}
